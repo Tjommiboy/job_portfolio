@@ -32,6 +32,13 @@ const Projects = () => {
           technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
           link="Exam_Project"
         />
+        <ProjectCard
+          title="React Course"
+          description="Final exam,where we display all our skills summed up."
+          image="images/exam3.jpg"
+          technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
+          link="Exam_Project"
+        />
       </div>
     </div>
   );

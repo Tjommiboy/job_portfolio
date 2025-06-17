@@ -15,7 +15,6 @@ const ProjectPage = () => {
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
 
       <div className="flex flex-col xl:flex-row gap-4">
-        {/* Text Content */}
         <div className="flex-1">
           <p className="mb-2">{project.description}</p>
           {project.reflections.split("\n\n").map((para, idx) => (
@@ -43,7 +42,6 @@ const ProjectPage = () => {
           </div>
         </div>
 
-        {/* Image Grid */}
         <div className="grid grid-cols-2 gap-4 xl:w-1/2 self-start">
           {project.images.map((src, index) => (
             <img
@@ -56,7 +54,6 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      {/* Tech Stack */}
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
       <section className="flex p-4">
         <ul className="flex flex-wrap gap-4 p-0 list-none">
