@@ -37,7 +37,7 @@ const Projects = () => {
           description="Final exam,where we display all our skills summed up."
           image="images/exam3.jpg"
           technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
-          link="Exam_Project"
+          link="React_Course"
         />
       </div>
     </div>
