@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+}
+:root {
+  --custom-bg_dark: #7a919d;
+  --generic-1: #8a9ea0;
+  --generic-2: #7fb5af;
+  --generic-3: #80cbae;
+  --generic-4: #96dfa0;
+  --generic-5: #c0ee89;
+  --generic-6: #f9f871;
+  --switch-1: #4f86f7;
+  --switch-2: #00247f;
+  --switch-3: #c7a762;
+  --switch-4: #e6f4f1;
+  --natural-1: #4f86f7;
+  --natural-2: #868fbb;
+  --natural-3: #f7f9ff;
+  --natural-4: #e6f4f1;
+  --natural-5: #4f86f7;
+  --natural-6: #434655;
+  --natural-7: #a8aabc;
+  --natural-8: #ac8500;
+  --natural-9: #725400;
+}
+
+body {
+  background-color: var(--natural-7) !important;
+  background-image: url("/images/DSC_7358-blackwhite.jpg");
+  background-size: cover;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
