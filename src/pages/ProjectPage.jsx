@@ -17,17 +17,28 @@ const ProjectPage = () => {
       <div className="flex flex-col xl:flex-row gap-4">
         <div className="flex-1">
           <p className="mb-2">{project.description}</p>
+
+          <ul className="list-disc list-inside flex flex-col gap-2">
+            {project.features.map((feature, index) => (
+              <li key={index}>
+                <span className="inline-block bg-amber-100/50 px-2 py-1 rounded">
+                  {feature}
+                </span>
+              </li>
+            ))}
+          </ul>
           {project.reflections.split("\n\n").map((para, idx) => (
             <p key={idx} className="mb-4">
               {para}
             </p>
           ))}
+
           <div className="flex gap-2">
             <a
               href={project.repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 underline"
+              className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 transition-colors hover:text-white duration-200"
             >
               View Repo
             </a>
@@ -35,7 +46,7 @@ const ProjectPage = () => {
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 underline"
+              className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200"
             >
               View Live Demo
             </a>
@@ -48,7 +59,7 @@ const ProjectPage = () => {
               key={index}
               src={src}
               alt={`${project.title} Screenshot ${index + 1}`}
-              className="w-full h-60 object-cover rounded shadow-xl bg-amber-50"
+              className="w-full h-60 object-fill rounded shadow-2xl bg-amber-50"
             />
           ))}
         </div>

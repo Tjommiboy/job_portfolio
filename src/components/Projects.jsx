@@ -18,13 +18,7 @@ const Projects = () => {
           technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
           link="javascript_frameworks"
         />
-        <ProjectCard
-          title="Semester Project 2"
-          description="React-based SPA with dynamic routing and state management."
-          image="/images/SemesterNotWorking (1).jpeg"
-          technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
-          link="Semester_Project"
-        />
+
         <ProjectCard
           title="Exam Project 2"
           description="Final exam,where we display all our skills summed up."
@@ -34,10 +28,10 @@ const Projects = () => {
         />
         <ProjectCard
           title="React Course"
-          description="Final exam,where we display all our skills summed up."
-          image="images/exam3.jpg"
-          technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
-          link="React_Course"
+          description="This is a react course I took initially to learn the basics of React."
+          image="images/reactProject2.jpeg"
+          technologies="React, Tailwind, Vite, CSS, GitHub,JSON,Render,Netlify"
+          link="ReactCourse"
         />
       </div>
     </div>

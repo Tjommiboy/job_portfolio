@@ -4,6 +4,14 @@ export const projectData = [
     title: "JavaScript Frameworks",
     description:
       "To apply React knowledge by building a functional, responsive eCommerce store using the Noroff Online Shop API.Lists all products from the API with a live search bar. Clicking a product takes you to its individual page.",
+    features: [
+      "View Listings",
+      "Add Item",
+      "Delete Item",
+      "Search function",
+      "Cart Logic",
+      "Conditional onSale logic ",
+    ],
     reflections:
       "At the start of this project, I felt like I was already behind, and React was completely new to me. Surprisingly, React turned out to be easier to grasp than many other topics we’ve covered. Building the eCom store taught me about routing, state management, and APIs. It was challenging but rewarding, and it helped me gain more confidence as a developer.",
     techStack: [
@@ -58,6 +66,7 @@ export const projectData = [
     id: "Semester_Project",
     title: "Semester Project 2",
     description: "React-based SPA with dynamic routing and state management.",
+    features: ["create User", "create VenueManager"],
     reflections:
       "While I’m including three completed projects in this portfolio, the semester project isn’t featured yet — even though it was working at one point. Over the past few days, I’ve been dealing with versioning issues related to packages and build tools, which caused the project to break and made it difficult to finalize in time. I lost a lot of time trying to fix those issues, and I feel like that shows in this final delivery. Still, I did my best to tie everything together and present a portfolio that reflects my progress and effort.",
     techStack: [
@@ -111,8 +120,19 @@ export const projectData = [
     id: "Exam_Project",
     title: "Exam Project 2",
     description:
-      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Users can search venues, make bookings, and manage profiles. Venue managers can create and manage listings and view bookings.Planned the project using GitHub Projects and designed UI/UX prototypes in Figma. Built with React, styled using Tailwind, and integrated with a REST API. Tested for accessibility and performance, then deployed on Netlify.",
+      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Users can :",
     technologies: ["React", "Tailwind", "Vite", "Figma", "Git", "Netlify"],
+    features: [
+      "View Listings",
+      "Book Venue",
+      "Create Venue",
+      "Delete Booking",
+      "Delete Venue",
+      "Add User",
+      "Add VenueManager",
+      "Search Venues",
+      "Manage Profiles",
+    ],
     reflections: `Compared to earlier projects, I felt more prepared and less behind when starting the Holidaze exam project. The structured Kanban planning and Figma prototyping helped me stay organized and maintain a clear development workflow.
 
     Technically, I used React to build a dynamic and responsive user interface, with conditional routing and state management based on user roles (Visitor, Customer, Venue Manager). I integrated the Holidaze API extensively to handle venue listings, bookings, and user authentication, working with asynchronous data fetching and managing error states effectively.
@@ -179,19 +199,20 @@ export const projectData = [
     id: "ReactCourse",
     title: "React Course",
     description:
-      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Users can search venues, make bookings, and manage profiles. Venue managers can create and manage listings and view bookings.Planned the project using GitHub Projects and designed UI/UX prototypes in Figma. Built with React, styled using Tailwind, and integrated with a REST API. Tested for accessibility and performance, then deployed on Netlify.",
+      "This project is a Job Listing App built during a React course. It’s a full-stack application that allows users to:",
+    features: [
+      "View a list of job postings",
+      "Add new jobs",
+      "Edit existing jobs",
+      "Delete jobs",
+      "View individual job details",
+    ],
     technologies: ["React", "Tailwind", "Vite", "Figma", "Git", "Netlify"],
-    reflections: `Compared to earlier projects, I felt more prepared and less behind when starting the Holidaze exam project. The structured Kanban planning and Figma prototyping helped me stay organized and maintain a clear development workflow.
+    reflections: `This React Course project was my first introduction to setting up a backend server. For the first time, I deployed a JSON server using Render, a free cloud hosting service. While the setup was relatively straightforward, it did require some troubleshooting, particularly around correctly binding the host to 0.0.0.0 and managing environment variables like PORT.
 
-    Technically, I used React to build a dynamic and responsive user interface, with conditional routing and state management based on user roles (Visitor, Customer, Venue Manager). I integrated the Holidaze API extensively to handle venue listings, bookings, and user authentication, working with asynchronous data fetching and managing error states effectively.
+    The experience gave me a foundational understanding of deploying backend services and connecting them to a React frontend. Although Render provides a free hosting tier—which is excellent for learning and testing—the quality of service reflects its cost. There were occasional cold starts, 502 Bad Gateway errors, and inconsistent response times, which taught me how to debug deployment issues and plan for potential downtime in a production context.
     
-    I implemented full CRUD functionality for both customers and venue managers—this was my first time applying role-based logic at this level in a frontend project. It was rewarding to see it all working end-to-end with the API and gave me more confidence in handling real-world application logic.
-    
-    For styling, I used CSS Modules to ensure scoped, maintainable styles and paid attention to accessibility. Responsive design was a priority throughout. Deploying the application to Netlify also gave me experience with static hosting and CI/CD workflows.
-    
-    Additionally, I implemented a simple search filter for the first time. While basic, it helped me understand the challenges of filtering and searching in frontend apps, and highlighted how much depth there is—especially around things like sorting, combining filters, and optimizing performance. It’s an area I definitely want to explore more.
-    
-    Overall, this project helped me realize how much I’ve learned, and also how much more there is to dive into. It felt like a turning point where I started applying what I’ve learned more confidently and seeing the bigger picture in frontend development.`,
+    Overall, this part of the course helped bridge the gap between frontend development and full-stack deployment, giving me confidence to work with hosted APIs and services beyond just the local environment.`,
     techStack: [
       {
         name: "HTML",
@@ -215,16 +236,16 @@ export const projectData = [
       },
       {
         name: "CSS Modules",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", // reuse CSS icon
-      },
-      {
-        name: "Figma",
-        logo: "https://cdn.simpleicons.org/figma/F24E1E",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
 
       {
         name: "Deployment with Netlify",
         logo: "https://cdn.simpleicons.org/netlify/00C7B7",
+      },
+      {
+        name: "Deployment with Render",
+        logo: "https://cdn.simpleicons.org/render/46E3B7",
       },
       {
         name: "Form Validation",
@@ -235,12 +256,12 @@ export const projectData = [
       },
     ],
     images: [
-      "/images/holidayz (2).jpeg",
-      "/images/holidayz (3).jpeg",
-      "/images/exam3.jpg",
-      "/images/exam4.jpg",
+      "/images/reactProject.jpeg",
+      "/images/reactProject2.jpeg",
+      "/images/reactProject3.jpeg",
+      "/images/reactProject4.jpeg",
     ],
-    repo: "https://github.com/Tjommiboy/project_exam2_.git",
-    demo: "https://unique-froyo-0a9eb1.netlify.app/",
+    repo: "https://github.com/Tjommiboy/reactcourse.git",
+    demo: "https://brilliant-tapioca-188d28.netlify.app/",
   },
 ];

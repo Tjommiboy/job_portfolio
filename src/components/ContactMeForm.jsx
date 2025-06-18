@@ -55,7 +55,7 @@ export default function ContactForm() {
         {/* Step 3: SUBMIT FORM */}
         <button
           type="submit"
-          className="w-full bg-[var(--generic-2)] text-white py-2 rounded-md hover:bg-[var(--natural-5)] transition-colors hover:animate-pulse-once"
+          className="w-full  text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200 hover:animate-pulse-once"
         >
           Send Message
         </button>
