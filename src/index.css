@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Love+Ya+Like+A+Sister&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #root {
   margin: 0 auto;
 }
@@ -29,8 +30,8 @@
 }
 
 body {
-  background-color: var(--natural-7) !important;
-  background-image: url("/images/DSC_7358-blackwhite.jpg");
+  background-color: var(--natural-6) !important;
+  background-image: url("/images/BG_Nights.jpg");
   background-size: cover;
 }
 
