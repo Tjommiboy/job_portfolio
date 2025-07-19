@@ -12,8 +12,27 @@ const ProjectPage = () => {
 
   return (
     <div className="container mx-auto p-4 bg-amber-50/70 rounded text-[var(--natural-6)]">
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-
+      <div className="flex mb-4 justify-between">
+        <h1 className="text-3xl font-bold ">{project.title}</h1>
+        <div className="flex gap-2">
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 transition-colors hover:text-white duration-200"
+          >
+            View Repo
+          </a>
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200"
+          >
+            View Live Demo
+          </a>
+        </div>
+      </div>
       <div className="flex flex-col xl:flex-row gap-4">
         <div className="flex-1">
           <p className="mb-2">{project.description}</p>
@@ -33,7 +52,7 @@ const ProjectPage = () => {
             </p>
           ))}
 
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <a
               href={project.repo}
               target="_blank"
@@ -50,7 +69,7 @@ const ProjectPage = () => {
             >
               View Live Demo
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-2 gap-4 xl:w-1/2 self-start">
