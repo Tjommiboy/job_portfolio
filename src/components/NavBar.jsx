@@ -76,7 +76,7 @@ const NavBar = () => {
           <div className="space-y-2">
             <NavItem to="/" label="Home" onClick={closeSidebar} />
             <NavItem to="/Projects" label="Projects" onClick={closeSidebar} />
-            <NavItem to="/About" label="About Me" onClick={closeSidebar} />
+
             <NavItem to="/Contact" label="Contact" onClick={closeSidebar} />
           </div>
 

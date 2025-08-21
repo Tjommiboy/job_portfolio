@@ -11,10 +11,18 @@ const Hero = () => {
         </div>
         <div className="md:w-1/2">
           <p className="bg-amber-50/50  p-4 text-1xl  text-[var(--generic-8)] rounded">
-            Hi, I’m a recent Bachelor’s graduate and Frontend Developer at
-            Noroff vocational school. I build responsive, user-friendly web
-            interfaces. I enjoy working with HTML, CSS, JavaScript, and React to
-            create clean and interactive digital experiences.
+            Hi,😀 <br></br> I’m a recent Bachelor’s graduate and Frontend
+            Developer from Noroff Vocational School with a passion for crafting
+            modern, responsive, and user-friendly web applications. I specialize
+            in building clean, interactive digital experiences using HTML, CSS,
+            JavaScript, and React, and I enjoy turning ideas into polished
+            interfaces that are both functional and visually appealing. Beyond
+            the technical side, I’m curious, quick to learn, and motivated to
+            contribute to real-world projects that make a difference for users.
+            <br></br>
+            <br></br>
+            Feel free to explore my projects to see how I bring these skills
+            into practice.
           </p>
         </div>
       </div>

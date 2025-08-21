@@ -120,7 +120,7 @@ export const projectData = [
     id: "Exam_Project",
     title: "Exam Project 2",
     description:
-      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Users can :",
+      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Note!: You must use a @stud.noroff.no email to register and log in successfully. Users can :",
     technologies: ["React", "Tailwind", "Vite", "Figma", "Git", "Netlify"],
     features: [
       "View Listings",

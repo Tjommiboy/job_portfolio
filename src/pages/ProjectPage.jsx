@@ -1,9 +1,14 @@
 import { useParams } from "react-router-dom";
 import { projectData } from "../projectData/projectData";
+import { useState } from "react";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
+  const [showReflections, setShowReflections] = useState(false);
 
+  function toggleReflections() {
+    setShowReflections((prev) => !prev);
+  }
   const project = projectData.find((p) => p.id === projectId);
 
   if (!project) {
@@ -46,11 +51,6 @@ const ProjectPage = () => {
               </li>
             ))}
           </ul>
-          {project.reflections.split("\n\n").map((para, idx) => (
-            <p key={idx} className="mb-4">
-              {para}
-            </p>
-          ))}
 
           {/* <div className="flex gap-2">
             <a
@@ -84,6 +84,22 @@ const ProjectPage = () => {
         </div>
       </div>
 
+      <button
+        onClick={toggleReflections}
+        className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200 m-2"
+      >
+        {showReflections ? "Hide Reflections" : "Project Reflections"}
+      </button>
+
+      {showReflections && (
+        <div className="mt-4">
+          {project.reflections.split("\n\n").map((para, idx) => (
+            <p key={idx} className="mb-4">
+              {para}
+            </p>
+          ))}
+        </div>
+      )}
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
       <section className="flex p-4">
         <ul className="flex flex-wrap gap-4 p-0 list-none">

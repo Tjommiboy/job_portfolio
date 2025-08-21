@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <div className="container mx-auto">
-        <h1 className="flex text-amber-50 justify-center font-bold ">
-          Hi im Anand Chetty, Frontend Developer
+        <h1 className="flex text-3xl font-bold mb-6 justify-center text-[var(--natural-7)]">
+          Hi, Im Anand Chetty, Frontend Developer
         </h1>
         <Hero />
       </div>
