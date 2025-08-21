@@ -19,7 +19,7 @@ const ProjectPage = () => {
     <div className="container mx-auto p-4 bg-amber-100/80 rounded text-[var(--natural-6)]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 gap-2 justify-between">
         <h1 className="text-3xl font-bold">{project.title}</h1>
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
           <a
             href={project.repo}
             target="_blank"
@@ -36,7 +36,7 @@ const ProjectPage = () => {
           >
             View Live Demo
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col xl:flex-row gap-4">
         <div className="flex-1">
@@ -78,18 +78,41 @@ const ProjectPage = () => {
               key={index}
               src={src}
               alt={`${project.title} Screenshot ${index + 1}`}
-              className="w-full h-60 object-fill rounded shadow-2xl bg-amber-50"
+              className="w-full h-auto aspect-[4/3] object-cover rounded shadow-2xl bg-amber-50"
             />
           ))}
         </div>
       </div>
 
-      <button
-        onClick={toggleReflections}
-        className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mt-2 "
-      >
-        {showReflections ? "Hide Reflections" : "Project Reflections"}
-      </button>
+      <div className="flex flex-wrap gap-2 mt-3">
+        {/* Live Demo stays bright and inviting */}
+        <a
+          href={project.demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+        >
+          View Live Demo
+        </a>
+
+        {/* Repo button: more serious / professional */}
+        <a
+          href={project.repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+        >
+          View Repo
+        </a>
+
+        {/* Reflections button: neutral */}
+        <button
+          onClick={toggleReflections}
+          className="bg-gradient-to-r from-gray-300 to-gray-400 text-gray-800 font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+        >
+          {showReflections ? "Hide Reflections" : "Project Reflections"}
+        </button>
+      </div>
 
       {showReflections && (
         <div className="mt-4">
@@ -100,6 +123,7 @@ const ProjectPage = () => {
           ))}
         </div>
       )}
+
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
       <section className="flex p-4">
         <ul className="flex flex-wrap gap-4 p-0 list-none">
