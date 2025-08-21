@@ -193,7 +193,7 @@ export const projectData = [
       "/images/exam4.jpg",
     ],
     repo: "https://github.com/Tjommiboy/project_exam2_.git",
-    demo: "https://unique-froyo-0a9eb1.netlify.app/",
+    demo: "https://gilded-torrone-80572f.netlify.app/",
   },
   {
     id: "ReactCourse",
