@@ -54,7 +54,7 @@ const NavBar = () => {
         className={`text-[var(--natural-4)] p-4 transition-all duration-300 z-40
           ${isSidebarOpen ? "block" : "hidden"} md:block
           fixed md:static top-0 left-0 h-full md:h-screen md:w-[14rem] w-[90%] max-w-[230px]
-          bg-gray-900 md:bg-transparent space-y-4
+          bg-gray-900 md:bg-gray-900/60 space-y-4
         `}
       >
         {/* Close Button (Mobile Only) */}

@@ -1,16 +1,16 @@
 const Hero = () => {
   return (
     <>
-      <div className="container flex flex-col sm:flex-row justify-center p-2 rounded gap-3 ">
-        <div className="md:w-1/3 bg-amber-50/50  p-2 rounded flex items-center justify-center">
+      <div className="container flex flex-col md:flex-col lg:flex-row justify-center p-2 rounded gap-3 ">
+        <div className="lg:w-1/3 md:w-1/2 bg-amber-100/80 p-2 rounded flex items-center justify-center">
           <img
             className="rounded object-cover w-full h-auto"
             src="/images/Portrett.jpg"
             alt="picture of Anand Chetty"
           />
         </div>
-        <div className="md:w-1/2">
-          <p className="bg-amber-50/50  p-4 text-1xl  text-[var(--generic-8)] rounded">
+        <div className="lg:w-1/2">
+          <p className="bg-amber-100/80 p-4 text-1xl  text-[var(--generic-8)] rounded">
             Hi,😀 <br></br> I’m a recent Bachelor’s graduate and Frontend
             Developer from Noroff Vocational School with a passion for crafting
             modern, responsive, and user-friendly web applications. I specialize

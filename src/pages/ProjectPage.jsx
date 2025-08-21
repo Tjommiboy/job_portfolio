@@ -16,15 +16,15 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 bg-amber-50/70 rounded text-[var(--natural-6)]">
-      <div className="flex mb-4 justify-between">
-        <h1 className="text-3xl font-bold ">{project.title}</h1>
+    <div className="container mx-auto p-4 bg-amber-100/80 rounded text-[var(--natural-6)]">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 gap-2 justify-between">
+        <h1 className="text-3xl font-bold">{project.title}</h1>
         <div className="flex gap-2">
           <a
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 transition-colors hover:text-white duration-200"
+            className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mb-2"
           >
             View Repo
           </a>
@@ -32,7 +32,7 @@ const ProjectPage = () => {
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200"
+            className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mb-2"
           >
             View Live Demo
           </a>
@@ -86,7 +86,7 @@ const ProjectPage = () => {
 
       <button
         onClick={toggleReflections}
-        className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200 m-2"
+        className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mt-2 "
       >
         {showReflections ? "Hide Reflections" : "Project Reflections"}
       </button>
