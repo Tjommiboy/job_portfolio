@@ -19,24 +19,6 @@ const ProjectPage = () => {
     <div className="container mx-auto p-4 bg-amber-100/80 rounded text-[var(--natural-6)]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 gap-2 justify-between">
         <h1 className="text-3xl font-bold">{project.title}</h1>
-        {/* <div className="flex gap-2">
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mb-2"
-          >
-            View Repo
-          </a>
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 mb-2"
-          >
-            View Live Demo
-          </a>
-        </div> */}
       </div>
       <div className="flex flex-col xl:flex-row gap-4">
         <div className="flex-1">

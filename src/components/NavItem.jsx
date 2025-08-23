@@ -9,7 +9,7 @@ const NavItem = ({ to, label }) => {
         `p-2 rounded block ${
           isActive
             ? "bg-[var(--generic-1)] text-[var(--generic-7)] w-[90%] "
-            : "hover:bg-[var(--generic-2)] hover:text-[var(--generic-7)] w-[90%] hover:animate-pulse-once"
+            : "hover:bg-[var(--transparent-bg)] hover:text-[var(--generic-7)] w-[90%] hover:animate-pulse-once"
         }`
       }
     >

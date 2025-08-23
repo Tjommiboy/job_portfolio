@@ -27,6 +27,7 @@
   --natural-7: #a8aabc;
   --natural-8: #ac8500;
   --natural-9: #725400;
+  --transparent-bg: rgba(249, 249, 249, 0.1);
 }
 
 body {
@@ -69,4 +70,23 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+#calendar {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+  background-color: rgba(249, 249, 249, 0.1);
+}
+
+#date {
+  font-size: 1rem;
+}
+
+#time {
+  font-size: 1rem;
+  font-weight: bold;
 }

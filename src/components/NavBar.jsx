@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import NavItem from "./NavItem";
 import { FaLinkedin } from "react-icons/fa";
+import Calender from "./Calender";
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -69,27 +70,30 @@ const NavBar = () => {
           </div>
         )}
 
-        <h2 className="text-xl text-[var(--natural-4)] font-bold mb-4">
-          My Portfolio
-        </h2>
         <nav className="flex flex-col justify-between h-full">
           <div className="space-y-2">
+            <h2 className="text-xl text-[var(--natural-4)] font-bold mb-4">
+              My Portfolio
+            </h2>
+
             <NavItem to="/" label="Home" onClick={closeSidebar} />
             <NavItem to="/Projects" label="Projects" onClick={closeSidebar} />
 
             <NavItem to="/Contact" label="Contact" onClick={closeSidebar} />
           </div>
-
-          <a
-            href="https://www.linkedin.com/in/anand-chetty-0666a8106/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeSidebar}
-            className="w-[90%] flex items-center gap-2 mb-20 px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-blue-700 hover:bg-amber-50/80"
-          >
-            <FaLinkedin className="text-xl" />
-            LinkedIn
-          </a>
+          <div className="">
+            <a
+              href="https://www.linkedin.com/in/anand-chetty-0666a8106/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeSidebar}
+              className="w-[90%] flex items-center gap-2  px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-blue-700 hover:bg-amber-50/80"
+            >
+              <FaLinkedin className="text-xl" />
+              LinkedIn
+            </a>
+            <Calender />
+          </div>
         </nav>
       </aside>
     </>
