@@ -1,0 +1,114 @@
+import React, { useState, useRef, useEffect } from "react";
+
+export default function ChatBot() {
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [height, setHeight] = useState(320); // initial height in px
+  const messagesEndRef = useRef(null);
+
+  const handleSend = async (e) => {
+    e.preventDefault();
+    if (!input.trim()) return;
+
+    setMessages((prev) => [...prev, { sender: "user", text: input }]);
+
+    // Send to backend
+    try {
+      const res = await fetch(
+        "http://localhost:5001/my-portfolio-cd16e/us-central1/askAnthropic",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: input }),
+        }
+      );
+      const data = await res.json();
+
+      if (data.reply) {
+        setMessages((prev) => [...prev, { sender: "ai", text: data.reply }]);
+      } else {
+        setMessages((prev) => [
+          ...prev,
+          { sender: "ai", text: "Error: no response" },
+        ]);
+      }
+    } catch (err) {
+      setMessages((prev) => [
+        ...prev,
+        { sender: "ai", text: "Error: could not reach server" },
+      ]);
+    }
+
+    setInput("");
+  };
+
+  // Auto scroll
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  if (!isOpen) {
+    return (
+      <button
+        className="fixed bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700"
+        onClick={() => setIsOpen(true)}
+      >
+        Open Chat
+      </button>
+    );
+  }
+
+  return (
+    <div
+      className="fixed bottom-4 right-4 bg-gray-900 text-white rounded shadow-lg flex flex-col resize overflow-hidden"
+      style={{ width: 320, height: height }}
+    >
+      <div className="flex justify-between items-center p-2 bg-gray-800 cursor-move">
+        <h2 className="text-lg font-semibold">Portfolio Guide</h2>
+        <button
+          className="text-white px-2 py-1 hover:bg-gray-700 rounded"
+          onClick={() => setIsOpen(false)}
+        >
+          X
+        </button>
+      </div>
+
+      <div className="flex-1 overflow-y-auto p-2 space-y-1">
+        {messages.map((msg, i) => (
+          <div
+            key={i}
+            className={`flex ${
+              msg.sender === "user" ? "justify-end" : "justify-start"
+            }`}
+          >
+            <p
+              className={`inline-block px-2 py-1 rounded break-words max-w-[80%] ${
+                msg.sender === "user" ? "bg-blue-700" : "bg-gray-700"
+              }`}
+            >
+              {msg.text}
+            </p>
+          </div>
+        ))}
+        <div ref={messagesEndRef} />
+      </div>
+
+      <form onSubmit={handleSend} className="flex gap-2 p-2">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Ask me anything..."
+          className="flex-1 px-2 py-1 rounded text-black focus:outline-none"
+        />
+        <button
+          type="submit"
+          className="bg-green-600 px-3 rounded hover:bg-green-700 transition-colors"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  );
+}

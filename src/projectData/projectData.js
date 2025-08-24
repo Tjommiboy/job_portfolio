@@ -199,7 +199,7 @@ export const projectData = [
     id: "ReactCourse",
     title: "React Course",
     description:
-      "Please be aware of about 20 sec spinn-up time on server:).  This project is a Job Listing App built during a React course. It’s a full-stack application that allows users to:",
+      " This project is a Job Listing App built during a React course. Please be aware of about 20 sec spinn-up time on the Render backend server:). It’s a full-stack application that allows users to:",
     features: [
       "View a list of job postings",
       "Add new jobs",

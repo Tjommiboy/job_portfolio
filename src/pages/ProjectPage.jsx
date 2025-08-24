@@ -33,28 +33,9 @@ const ProjectPage = () => {
               </li>
             ))}
           </ul>
-
-          {/* <div className="flex gap-2">
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 transition-colors hover:text-white duration-200"
-            >
-              View Repo
-            </a>
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white-500  bg-lime-600/50 p-2 rounded hover:bg-lime-700 hover:text-white  transition-colors duration-200"
-            >
-              View Live Demo
-            </a>
-          </div> */}
         </div>
 
-        <div className="grid grid-cols-2 gap-4 xl:w-1/2 self-start">
+        <div className="grid bg-amber-100/20 grid-cols-2 gap-4 xl:w-1/2 self-start shadow-2xl  p-2 rounded-lg ">
           {project.images.map((src, index) => (
             <img
               key={index}
@@ -82,7 +63,7 @@ const ProjectPage = () => {
           href={project.repo}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300"
         >
           View Repo
         </a>
@@ -108,7 +89,7 @@ const ProjectPage = () => {
 
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
       <section className="flex p-4">
-        <ul className="flex flex-wrap gap-4 p-0 list-none">
+        <ul className="flex bg-amber-50/70 p-2 rounded-lg flex-wrap gap-4 p-0 list-none">
           {project.techStack.map((tech) => (
             <li
               key={tech.name}

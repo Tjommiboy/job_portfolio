@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Calender from "../components/Calender";
+
+import ChatBot from "../components/ChatBot";
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
           </h1>
 
           <Hero />
+          <ChatBot />
         </div>
       </div>
     </>
