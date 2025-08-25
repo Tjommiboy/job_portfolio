@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
+import ChatBot from "./ChatBot";
 
 export default function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -11,6 +12,7 @@ export default function Layout() {
 
       <main className="flex-grow p-6">
         <Outlet />
+        <ChatBot />
       </main>
     </div>
   );

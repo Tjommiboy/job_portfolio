@@ -13,7 +13,6 @@ const Home = () => {
           </h1>
 
           <Hero />
-          <ChatBot />
         </div>
       </div>
     </>
