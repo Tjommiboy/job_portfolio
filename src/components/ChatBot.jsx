@@ -15,20 +15,24 @@ export default function ChatBot() {
     e.preventDefault();
     if (!input.trim()) return;
 
-    setMessages((prev) => [...prev, { sender: "user", text: input }]);
-
+    const userMessage = input;
+    setMessages((prev) => [...prev, { sender: "user", text: userMessage }]);
     setInput("");
-    // Send to backend
     setLoading(true);
+
     try {
-      const res = await fetch(
-        "http://localhost:5001/my-portfolio-cd16e/us-central1/askAnthropic",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: input }),
-        }
-      );
+      // ✅ Dynamic URL based on environment
+      const baseUrl =
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:5001/my-portfolio-cd16e/us-central1"
+          : "https://us-central1-my-portfolio-cd16e.cloudfunctions.net";
+
+      const res = await fetch(`${baseUrl}/askAnthropic`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: userMessage }),
+      });
+
       const data = await res.json();
 
       if (data.reply) {
@@ -40,6 +44,7 @@ export default function ChatBot() {
         ]);
       }
     } catch (err) {
+      console.error("ChatBot error:", err);
       setMessages((prev) => [
         ...prev,
         { sender: "ai", text: "Error: could not reach server" },
