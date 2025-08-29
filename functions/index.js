@@ -33,6 +33,17 @@ When discussing projects, reference specific details from the above data includi
 };
 
 export const askAnthropic = functions.https.onRequest(async (req, res) => {
+  // Add CORS headers first
+  res.set("Access-Control-Allow-Origin", "*");
+  res.set("Access-Control-Allow-Methods", "GET, POST");
+  res.set("Access-Control-Allow-Headers", "Content-Type");
+
+  // Handle preflight requests
+  if (req.method === "OPTIONS") {
+    res.status(204).send("");
+    return;
+  }
+
   try {
     const { question } = req.body;
     if (!question) return res.status(400).json({ error: "Missing question" });
