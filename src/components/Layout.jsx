@@ -12,7 +12,7 @@ export default function Layout() {
 
       <main className="flex-grow p-6">
         <Outlet />
-        <ChatBot />
+        <ChatBot className="mt-2" />
       </main>
     </div>
   );

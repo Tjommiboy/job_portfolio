@@ -193,13 +193,13 @@ export const projectData = [
       "/images/exam4.jpg",
     ],
     repo: "https://github.com/Tjommiboy/project_exam2_.git",
-    demo: "https://gilded-torrone-80572f.netlify.app/",
+    demo: "https://inspiring-manatee-55dd8b.netlify.app/",
   },
   {
     id: "ReactCourse",
     title: "React Course",
     description:
-      " This project is a Job Listing App built during a React course. Please be aware of about 20 sec spinn-up time on the Render backend server:). It’s a full-stack application that allows users to:",
+      " This project is a Job Listing App built during a React course. Please be aware of about 20+ sec spinn-up time on the Render backend server:). It’s a full-stack application that allows users to:",
     features: [
       "View a list of job postings",
       "Add new jobs",

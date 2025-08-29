@@ -55,7 +55,7 @@ const ProjectPage = () => {
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-lime-500 to-lime-600 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300"
         >
-          View Live Demo
+          View Website
         </a>
 
         {/* Repo button: more serious / professional */}
