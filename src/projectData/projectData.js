@@ -118,9 +118,9 @@ export const projectData = [
   },
   {
     id: "Exam_Project",
-    title: "Exam Project 2",
+    title: "Holidaze",
     description:
-      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform. Note!: You must use a @stud.noroff.no email to register and log in successfully. Users can :",
+      "Developed a responsive front-end for Holidaze, a fictional accommodation booking platform built with the Noroff school´s  API . Users can :",
     technologies: ["React", "Tailwind", "Vite", "Figma", "Git", "Netlify"],
     features: [
       "View Listings",
@@ -193,11 +193,11 @@ export const projectData = [
       "/images/exam4.jpg",
     ],
     repo: "https://github.com/Tjommiboy/project_exam2_.git",
-    demo: "https://inspiring-manatee-55dd8b.netlify.app/",
+    demo: "https://silver-dolphin-fa7efa.netlify.app/",
   },
   {
     id: "ReactCourse",
-    title: "React Course",
+    title: "Job Finder",
     description:
       " This project is a Job Listing App built during a React course. Please be aware of about 20+ sec spinn-up time on the Render backend server:). It’s a full-stack application that allows users to:",
     features: [
