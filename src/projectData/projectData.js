@@ -60,7 +60,7 @@ export const projectData = [
       "/images/JF_ShoppingCart.jpeg",
     ],
     repo: "https://github.com/Tjommiboy/javascript_framworks.git",
-    demo: "https://silver-seahorse-3817b9.netlify.app/",
+    demo: "https://jolly-gumdrop-4d9aac.netlify.app/",
   },
   {
     id: "Semester_Project",
