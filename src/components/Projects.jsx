@@ -12,6 +12,13 @@ const Projects = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <ProjectCard
+          title="Endgame"
+          description="Scrimba course where I´ve built the Endgame:Hangman"
+          image="images/Endgame 5.png"
+          technologies="React, Vite, CSS, GitHub,JSON,Render,Netlify"
+          link="Endgame"
+        />
+        <ProjectCard
           title="Gimmi Bid N´Sell"
           description="Responsive eCommerce store using the Noroff Online Shop API"
           image="/images/JF_HP.jpeg"
@@ -32,13 +39,6 @@ const Projects = () => {
           image="images/reactProject2.jpeg"
           technologies="React, Tailwind, Vite, CSS, GitHub,JSON,Render,Netlify"
           link="ReactCourse"
-        />
-        <ProjectCard
-          title="Endgame"
-          description="Scrimba course where I´ve built the Endgame:Hangman"
-          image="images/Endgame 5.png"
-          technologies="React, Vite, CSS, GitHub,JSON,Render,Netlify"
-          link="Endgame"
         />
       </div>
     </div>
