@@ -21,7 +21,7 @@ const Projects = () => {
 
         <ProjectCard
           title="Holidaze"
-          description="Holidayz is an accommodation platform."
+          description="Holidaze is an accommodation platform."
           image="images/exam3.jpg"
           technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
           link="Exam_Project"
