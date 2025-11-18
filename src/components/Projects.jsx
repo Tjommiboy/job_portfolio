@@ -33,6 +33,13 @@ const Projects = () => {
           technologies="React, Tailwind, Vite, CSS, GitHub,JSON,Render,Netlify"
           link="ReactCourse"
         />
+        <ProjectCard
+          title="Endgame"
+          description="Scrimba course where i build the Endgame:Hangman"
+          image="images/Endgame 5.png"
+          technologies="React, Vite, CSS, GitHub,JSON,Render,Netlify"
+          link="Endgame"
+        />
       </div>
     </div>
   );

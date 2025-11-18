@@ -264,4 +264,71 @@ export const projectData = [
     repo: "https://github.com/Tjommiboy/reactcourse.git",
     demo: "https://brilliant-tapioca-188d28.netlify.app/",
   },
+  {
+    id: "Endgame",
+    title: "Hangman",
+    description:
+      "Assembly: Endgame is a word‑guessing game (like Hangman) where players try to guess a hidden word by selecting letters. The app tracks correct and wrong guesses, updates the displayed word dynamically, and handles game-over conditions (win or lose). Throughout the project, you practice React concepts like:",
+    technologies: ["React", "Vite", "Figma", "Git", "Netlify"],
+    features: [
+      "Components",
+      "Props",
+      "UseState",
+      "side effects",
+      "conditional rendering",
+      "event handling",
+      "interactive UI elements",
+    ],
+    reflections: ` Going though this ive learnt a lot`,
+    techStack: [
+      {
+        name: "HTML",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "React",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "React Router",
+        logo: "https://cdn.simpleicons.org/reactrouter/CA4245",
+      },
+      {
+        name: "CSS Modules",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", // reuse CSS icon
+      },
+      {
+        name: "Figma",
+        logo: "https://cdn.simpleicons.org/figma/F24E1E",
+      },
+
+      {
+        name: "Deployment with Netlify",
+        logo: "https://cdn.simpleicons.org/netlify/00C7B7",
+      },
+      {
+        name: "Form Validation",
+        logo: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/svgs/solid/check.svg",
+      },
+      {
+        name: "API Integration",
+      },
+    ],
+    images: [
+      "/images/LearnReact .png",
+      "/images/Endgame 2.png",
+      "/images/Endgame.png",
+      "/images/Endgame 4.png",
+    ],
+    repo: "https://github.com/Tjommiboy/hangman",
+    demo: "https://mellow-heliotrope-bbbc60.netlify.app/",
+  },
 ];
