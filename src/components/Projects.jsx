@@ -35,7 +35,7 @@ const Projects = () => {
         />
         <ProjectCard
           title="Endgame"
-          description="Scrimba course where i build the Endgame:Hangman"
+          description="Scrimba course where I´ve built the Endgame:Hangman"
           image="images/Endgame 5.png"
           technologies="React, Vite, CSS, GitHub,JSON,Render,Netlify"
           link="Endgame"
