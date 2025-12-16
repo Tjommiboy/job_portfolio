@@ -25,7 +25,7 @@ export default function ChatBot() {
       const baseUrl =
         window.location.hostname === "localhost"
           ? "http://localhost:5001/my-portfolio-cd16e/us-central1"
-          : "https://us-central1-my-portfolio-cd16e.cloudfunctions.net";
+          : "https://askanthropic-hdk7woyz5a-uc.a.run.app";
 
       const res = await fetch(`${baseUrl}/askAnthropic`, {
         method: "POST",
