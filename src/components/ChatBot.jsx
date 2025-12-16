@@ -21,13 +21,14 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      // ✅ Dynamic URL based on environment
+      // ✅ Updated URL logic for 2025 Gen 2 Functions
       const baseUrl =
         window.location.hostname === "localhost"
-          ? "http://localhost:5001/my-portfolio-cd16e/us-central1"
+          ? "http://localhost:5001/my-portfolio-cd16e/us-central1/askAnthropic"
           : "https://askanthropic-hdk7woyz5a-uc.a.run.app";
 
-      const res = await fetch(`${baseUrl}/askAnthropic`, {
+      // ✅ Fetch the baseUrl directly (no extra /askAnthropic for production)
+      const res = await fetch(baseUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userMessage }),
