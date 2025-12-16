@@ -23,7 +23,7 @@ export default function ChatBot() {
     try {
       // ✅ Dynamic URL based on environment
       const baseUrl =
-        process.env.NODE_ENV === "development"
+        window.location.hostname === "localhost"
           ? "http://localhost:5001/my-portfolio-cd16e/us-central1"
           : "https://us-central1-my-portfolio-cd16e.cloudfunctions.net";
 
