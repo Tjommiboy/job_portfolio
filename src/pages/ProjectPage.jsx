@@ -47,7 +47,7 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 mt-3">
+      <div className="flex justify-end flex-wrap gap-2 mt-3">
         {/* Live Demo stays bright and inviting */}
         <a
           href={project.demo}

@@ -279,7 +279,7 @@ export const projectData = [
       "event handling",
       "interactive UI elements",
     ],
-    reflections: ` Going though this ive learnt a lot`,
+    reflections: `Working on Assembly: Endgame helped me improve my understanding of React state and conditional rendering. I learned how to manage user input, track game progress, and update the UI dynamically based on correct and incorrect guesses. The project also strengthened my problem-solving skills by handling game logic such as win and lose conditions. Overall, it increased my confidence in building interactive React applications.`,
     techStack: [
       {
         name: "HTML",
