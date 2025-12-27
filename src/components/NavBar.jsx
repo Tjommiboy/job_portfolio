@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import NavItem from "./NavItem";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Calender from "./Calender";
 
 const NavBar = () => {
@@ -87,10 +87,21 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeSidebar}
-              className="w-[90%] flex items-center gap-2  px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-blue-700 hover:bg-amber-50/80"
+              className="w-[90%] mb-1 flex items-center gap-2  px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-blue-700 hover:bg-amber-50/80"
             >
               <FaLinkedin className="text-xl" />
               LinkedIn
+            </a>
+            <a
+              href="https://github.com/Tjommiboy"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeSidebar}
+              className="w-[90%] flex items-center gap-2  px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-zinc-800
+              hover:bg-amber-50/80"
+            >
+              <FaGithub className="text-xl" />
+              Github
             </a>
             <Calender />
           </div>

@@ -28,11 +28,11 @@ const Calender = () => {
   }, []);
 
   return (
-    <div id="calendar" className="bg-white  border-gray-800 text-center ">
-      <p id="date" className="text-[var(--natural-7)] mb-2">
+    <div id="calendar" className="bg-sky-400/10 border-gray-800 text-center ">
+      <p id="date" className="text-amber-50/50 mb-2">
         {dateTime.date}
       </p>
-      <p id="time" className="text-[var(--natural-7)] font-bold">
+      <p id="time" className="text-amber-50/50 font-bold">
         {dateTime.time}
       </p>
     </div>
