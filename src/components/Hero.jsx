@@ -21,11 +21,7 @@ const Hero = () => {
             <br />
             I’m highly motivated to work, learn, and improve my skills through
             real projects, and I enjoy collaborating with others to turn ideas
-            into working products. Feel free to check out my work{" "}
-            <Link to="/projects" className="underline font-medium">
-              here
-            </Link>
-            .
+            into working products. Feel free to check out my work. .
           </p>
         </div>
       </div>
