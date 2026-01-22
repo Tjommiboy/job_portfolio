@@ -24,10 +24,10 @@ const ProjectPage = () => {
         <div className="flex-1">
           <p className="mb-2">{project.description}</p>
 
-          <ul className="list-disc list-inside flex flex-col gap-2">
+          <ul className="flex flex-wrap gap-2">
             {project.features.map((feature, index) => (
               <li key={index}>
-                <span className="inline-block bg-amber-100/50 px-2 py-1 rounded">
+                <span className="bg-amber-100/50 backdrop-blur px-3 py-1 rounded-full text-sm font-medium">
                   {feature}
                 </span>
               </li>
