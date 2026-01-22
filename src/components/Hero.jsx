@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Hero = () => {
           />
         </div>
         <div className="lg:w-1/2 flex">
-          <p className="bg-amber-100/80 p-4 text-1xl text-[var(--generic-8)] rounded w-full">
+          <p className="bg-amber-100/80 p-4 text-xl text-[var(--generic-8)] rounded w-full">
             Hi 😀 <br />
             I’m a recent Higher Professional Degree graduate in Front-end
             Development from Noroff Vocational School. I mainly work with HTML,
@@ -21,9 +22,9 @@ const Hero = () => {
             I’m highly motivated to work, learn, and improve my skills through
             real projects, and I enjoy collaborating with others to turn ideas
             into working products. Feel free to check out my work{" "}
-            <a href="Projects" className="underline font-medium">
+            <Link to="/projects" className="underline font-medium">
               here
-            </a>
+            </Link>
             .
           </p>
         </div>
