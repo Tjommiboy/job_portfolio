@@ -32,7 +32,7 @@
 
 body {
   background-color: var(--natural-6) !important;
-  background-image: url("/images/BG_Nights.jpg");
+  /* background-image: url("/images/BG_Nights.jpg"); */
   background-size: cover;
 }
 

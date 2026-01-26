@@ -1,8 +1,11 @@
 // ContactForm.jsx
 export default function ContactForm() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)]">
+    <div className="container mx-auto px-4 ">
+      <h2
+        className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)]"
+        style={{ textShadow: "2px 7px 7px rgba(0, 0, 0, 0.3)" }}
+      >
         Contact Me
       </h2>
       <div className="max-w-lg mx-auto p-4 bg-amber-100/80  shadow-md rounded mt-8">

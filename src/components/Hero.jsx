@@ -14,8 +14,8 @@ const Hero = () => {
           <p className="bg-amber-100/80 p-4 text-xl text-[var(--generic-8)] rounded w-full">
             Hi 😀 <br />
             I’m a recent Higher Professional Degree graduate in Front-end
-            Development from Noroff Vocational School. I mainly work with HTML,
-            CSS, JavaScript, and React, and I enjoy building clean, responsive
+            Development from Noroff Vocational School. I mainly work with React,
+            HTML, CSS, and JavaScript, and I enjoy building clean, responsive
             interfaces that feel good to use.
             <br />
             <br />

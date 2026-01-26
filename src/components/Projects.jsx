@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 ">
       <h2
         className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)]"
         style={{ textShadow: "2px 7px 7px rgba(0, 0, 0, 0.3)" }}
