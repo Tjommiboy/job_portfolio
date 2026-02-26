@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Love+Ya+Like+A+Sister&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #root {
   margin: 0 auto;
 }
@@ -26,11 +27,12 @@
   --natural-7: #a8aabc;
   --natural-8: #ac8500;
   --natural-9: #725400;
+  --transparent-bg: rgba(60, 60, 60, 0.8);
 }
 
 body {
-  background-color: var(--natural-7) !important;
-  background-image: url("/images/DSC_7358-blackwhite.jpg");
+  background-color: var(--natural-6) !important;
+  background-image: url("https://images.unsplash.com/photo-1626553683558-dd8dc97e40a4?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
 }
 
@@ -68,4 +70,22 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+#calendar {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+#date {
+  font-size: 1rem;
+}
+
+#time {
+  font-size: 1rem;
+  font-weight: bold;
 }
