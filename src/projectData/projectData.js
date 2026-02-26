@@ -189,8 +189,8 @@ export const projectData = [
     images: [
       "/images/holidayz (2).jpeg",
       "/images/holidayz (3).jpeg",
-      "/images/exam3.jpg",
-      "/images/exam4.jpg",
+      "/images/holidaze11.png",
+      "/images/holidaze12.png",
     ],
     repo: "https://github.com/Tjommiboy/project_exam2_.git",
     demo: "https://silver-dolphin-fa7efa.netlify.app/",

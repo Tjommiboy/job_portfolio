@@ -83,14 +83,14 @@ const NavBar = () => {
           </div>
           <div className="">
             <a
-              href="https://anandchetty-resume.netlify.app/"
+              href="https://anandchetty-cv.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeSidebar}
               className="w-[90%] mb-1 flex items-center gap-2  px-2 py-2 bg-sky-400/10 rounded text-amber-50/50 hover:text-blue-700 hover:bg-amber-50/80"
             >
               <FaFileAlt className="text-xl" />
-              Resume
+              CV
             </a>
             <a
               href="https://www.linkedin.com/in/anand-chetty-0666a8106/"

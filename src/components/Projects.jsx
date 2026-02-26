@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="container mx-auto px-4 ">
-      <h2
-        className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)]"
-        style={{ textShadow: "2px 7px 7px rgba(0, 0, 0, 0.3)" }}
-      >
+      <h2 className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)] [text-shadow:3px_3px_8px_rgba(255,255,255,0.3)]">
         Project Evolution
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -29,7 +26,7 @@ const Projects = () => {
         <ProjectCard
           title="Holidaze"
           description="Holidaze is an accommodation platform."
-          image="images/exam3.jpg"
+          image="images/holidaze11.png"
           technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
           link="Exam_Project"
         />

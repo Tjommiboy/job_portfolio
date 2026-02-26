@@ -41,7 +41,7 @@ const ProjectPage = () => {
               key={index}
               src={src}
               alt={`${project.title} Screenshot ${index + 1}`}
-              className="w-full h-auto aspect-[4/3] object-cover rounded shadow-2xl bg-amber-50"
+              className="w-full h-auto aspect-[4/3] object-fit rounded shadow-2xl bg-amber-50"
             />
           ))}
         </div>

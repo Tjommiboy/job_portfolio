@@ -2,10 +2,7 @@
 export default function ContactForm() {
   return (
     <div className="container mx-auto px-4 ">
-      <h2
-        className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)]"
-        style={{ textShadow: "2px 7px 7px rgba(0, 0, 0, 0.3)" }}
-      >
+      <h2 className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)] [text-shadow:3px_3px_8px_rgba(255,255,255,0.3)]">
         Contact Me
       </h2>
       <div className="max-w-lg mx-auto p-4 bg-amber-100/80  shadow-md rounded mt-8">

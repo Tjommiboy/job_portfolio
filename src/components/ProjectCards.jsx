@@ -11,7 +11,7 @@ const ProjectCard = ({ title, description, image, technologies, link }) => {
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover rounded mb-2"
+        className="w-full h-48 object-fit rounded mb-2"
       />
 
       <p className="text-sm text-[var(--generic-8)] mb-2 line-clamp-3">
