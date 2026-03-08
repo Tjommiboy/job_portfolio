@@ -2,10 +2,10 @@
 export default function ContactForm() {
   return (
     <div className="container mx-auto px-4 ">
-      <h2 className="text-4xl font-bold mb-6 text-center text-[var(--natural-7)] [text-shadow:3px_3px_8px_rgba(255,255,255,0.3)]">
+      <h2 className="text-4xl font-bold mb-6 text-center text-[var(--generic-2)] [text-shadow:3px_3px_8px_rgba(255,255,255,0.3)]">
         Contact Me
       </h2>
-      <div className="max-w-lg mx-auto p-4 bg-amber-100/80  shadow-md rounded mt-8">
+      <div className="max-w-lg mx-auto p-4 bg-[rgb(var(--color-bg)/0.8)] shadow-md rounded mt-8">
         {/* Step 1: CONNECT FORM */}
         <form
           action="https://formsubmit.co/anandchetty5071@gmail.com"
@@ -17,7 +17,10 @@ export default function ContactForm() {
 
           {/* Step 2: ADD NAME ATTRIBUTES */}
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="name">
+            <label
+              className="block text-sm font-medium mb-1 text-[var(--generic-2)]"
+              htmlFor="name"
+            >
               Name
             </label>
             <input
@@ -29,7 +32,10 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="email">
+            <label
+              className="block text-sm font-medium mb-1 text-[var(--generic-2)]"
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -41,7 +47,10 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="message">
+            <label
+              className="block text-sm font-medium mb-1 text-[var(--generic-2)]"
+              htmlFor="message"
+            >
               Message
             </label>
             <textarea

@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <>
       <div className="container flex flex-col md:flex-col lg:flex-row justify-center items-stretch p-2 rounded gap-3">
-        <div className="lg:w-1/3 md:w-1/2 bg-amber-100/80 p-2 rounded flex items-center justify-center">
+        <div className="lg:w-1/3 md:w-1/2 bg-[rgb(var(--color-bg)/0.4)] p-2 rounded flex items-center justify-center">
           <img
             className="rounded object-cover w-full h-full"
             src="/images/Portrett.jpg"
@@ -11,7 +11,7 @@ const Hero = () => {
           />
         </div>
         <div className="lg:w-1/2 flex">
-          <p className="bg-amber-100/80 p-4 text-xl text-[var(--generic-8)] rounded w-full">
+          <p className="bg-[rgb(var(--color-bg)/0.6)] p-4 text-xl text-[var(--generic-2)] rounded w-full">
             Hi 😀 <br />
             I’m a recent Higher Professional Degree graduate in Front-end
             Development from Noroff Vocational School. I mainly work with React,
