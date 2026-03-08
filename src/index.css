@@ -28,6 +28,7 @@
   --natural-8: #ac8500;
   --natural-9: #725400;
   --transparent-bg: rgba(60, 60, 60, 0.8);
+  --color-bg: 6 10 18;
 }
 @theme {
   --color-darkBg: #111827;

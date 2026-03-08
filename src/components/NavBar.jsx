@@ -55,7 +55,7 @@ const NavBar = () => {
         className={`text-[var(--natural-4)] p-4 transition-all duration-300 z-40
           ${isSidebarOpen ? "block" : "hidden"} md:block
           fixed md:static top-0 left-0 h-full md:h-screen md:w-[14rem] w-[90%] max-w-[230px]
-          bg-gray-900 md:bg-gray-900/60 space-y-4
+          bg-gray-900 md:bg-[rgb(var(--color-bg)/0.6)] space-y-4
         `}
       >
         {/* Close Button (Mobile Only) */}
@@ -72,7 +72,7 @@ const NavBar = () => {
 
         <nav className="flex flex-col justify-between h-full">
           <div className="space-y-2">
-            <h2 className="text-xl text-[var(--natural-4)] font-bold mb-4">
+            <h2 className="text-xl text-[var(--generic-2)] font-bold mb-4">
               My Portfolio
             </h2>
 

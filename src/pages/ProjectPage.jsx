@@ -16,7 +16,7 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 bg-amber-100/80 rounded text-[var(--natural-6)]">
+    <div className="container mx-auto p-4 bg-[rgb(var(--color-bg)/0.6)] rounded text-[var(--generic-2)]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 gap-2 justify-between">
         <h1 className="text-3xl font-bold">{project.title}</h1>
       </div>
@@ -27,7 +27,7 @@ const ProjectPage = () => {
           <ul className="flex flex-wrap gap-2">
             {project.features.map((feature, index) => (
               <li key={index}>
-                <span className="bg-amber-100/50 backdrop-blur px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-yellow-200/20 backdrop-blur px-3 py-1 rounded-full text-sm font-medium">
                   {feature}
                 </span>
               </li>
@@ -89,11 +89,11 @@ const ProjectPage = () => {
 
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
       <section className="flex p-4">
-        <ul className="flex bg-amber-50/70 p-2 rounded-lg flex-wrap gap-4 p-0 list-none">
+        <ul className="flex bg-yellow-200/20 p-2 rounded-lg flex-wrap gap-4 p-0 list-none">
           {project.techStack.map((tech) => (
             <li
               key={tech.name}
-              className="flex items-center gap-2 bg-gray-100 px-2 py-1 rounded"
+              className="flex items-center gap-2 bg-gray-600 px-2 py-1 rounded"
             >
               {tech.logo && (
                 <img
