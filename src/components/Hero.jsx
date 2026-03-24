@@ -8,22 +8,20 @@ const Hero = () => {
         {/* H1 */}
         <h1 className="mb-2 text-5xl md:text-6xl lg:text-7xl text-white [text-shadow:0px_3px_8px_rgba(255,255,255,0.2)]">
           Hi, I'm{" "}
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-400/80 to-cyan-400/70">
             Anand Chetty,
           </span>
           Frontend Developer
         </h1>
 
-        {/* IMAGE (only visible on small screens here) */}
         <div className="block lg:hidden bg-[rgb(var(--color-bg)/0.4)] p-2 rounded my-2">
           <img
-            className="rounded object-cover w-full h-full"
+            className="rounded object-cover w-full h-full lg:h-1/2"
             src="/images/Portrett.jpg"
             alt="picture of Anand Chetty"
           />
         </div>
 
-        {/* PARAGRAPH */}
         <p className="bg-[rgb(var(--color-bg)/0.6)] p-4 text-xl text-[var(--generic-2)] rounded w-full">
           I’m a recent Higher Professional Degree graduate in Front-end
           Development from Noroff Vocational School. I mainly work with React,
@@ -37,8 +35,7 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* IMAGE (desktop only) */}
-      <div className="hidden lg:flex lg:w-1/3 bg-[rgb(var(--color-bg)/0.4)] p-2 rounded items-center justify-center">
+      <div className="hidden lg:flex lg:w-1/2 bg-[rgb(var(--color-bg)/0.4)] p-2 rounded items-center justify-center">
         <img
           className="rounded object-cover w-full h-full"
           src="/images/Portrett.jpg"

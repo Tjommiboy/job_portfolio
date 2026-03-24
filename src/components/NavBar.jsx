@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import NavItem from "./NavItem";
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import Calender from "./Calender";
+import ChatBot from "./ChatBot";
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -113,6 +114,7 @@ const NavBar = () => {
               <FaGithub className="text-xl" />
               Github
             </a>
+            <ChatBot className="mt-2" />
             <Calender />
           </div>
         </nav>
