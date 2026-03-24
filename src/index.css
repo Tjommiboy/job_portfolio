@@ -29,13 +29,32 @@
   --natural-9: #725400;
   --transparent-bg: rgba(60, 60, 60, 0.8);
   --color-bg: 6 10 18;
+  --gradient-primary: linear-gradient(to right, #0d9488, #0891b2);
 }
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+--gradient-primary-soft: linear-gradient(
+  to right,
+  (13, 148, 136, 0.4),
+  (8, 145, 178, 0.4)
+);
+@layer utilities {
+  .text-gradient-primary {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 @theme {
   --color-darkBg: #111827;
 }
 
 body {
-  background-color: var(--natural-6) !important;
+  background-color: #252525;
   background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import Draggable from "react-draggable";
+import { MessageCircle } from "lucide-react";
 
 export default function ChatBot() {
   const [messages, setMessages] = useState([]);
@@ -63,9 +64,10 @@ export default function ChatBot() {
   if (!isOpen) {
     return (
       <button
-        className="fixed bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700"
+        className="w-[90%] bg-gradient-to-r from-orange-400/30 to-rose-300/30 hover:from-orange-400/60 hover:to-rose-300/50 text-white px-2 py-3 rounded shadow-lg flex items-center transition-all duration-500 hover:scale-105 hover:shadow-xl mt-1"
         onClick={() => setIsOpen(true)}
       >
+        <MessageCircle className="size-5" />
         Open Chat
       </button>
     );
@@ -75,10 +77,11 @@ export default function ChatBot() {
     <Draggable nodeRef={nodeRef} cancel=".no-drag">
       <div
         ref={nodeRef}
-        className="fixed bottom-4 right-4 bg-gray-900 text-white rounded shadow-lg flex flex-col resize overflow-hidden"
-        style={{ width: 320, height: height }}
+        className="fixed bottom-4 left-70 bg-gray-900 text-white rounded shadow-lg flex flex-col resize overflow-hidden
+             w-11/12 max-w-sm md:w-96 lg:w-[320px]"
+        style={{ height: height }}
       >
-        <div className="flex justify-between items-center p-2 bg-gray-800 cursor-move">
+        <div className="flex justify-between items-center p-2 bg-gradient-to-r from-orange-400/40 to-rose-300/30 cursor-move">
           <h2 className="text-lg font-semibold">Portfolio Guide</h2>
           <button
             className="text-white px-2 py-1 hover:bg-gray-700 rounded no-drag"

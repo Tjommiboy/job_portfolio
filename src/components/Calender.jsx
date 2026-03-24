@@ -28,7 +28,10 @@ const Calender = () => {
   }, []);
 
   return (
-    <div id="calendar" className="bg-sky-400/10 border-gray-800 text-center ">
+    <div
+      id="calendar"
+      className="bg-sky-400/10 border-gray-800 text-center w-[90%]"
+    >
       <p id="date" className="text-amber-50/50 mb-2">
         {dateTime.date}
       </p>
