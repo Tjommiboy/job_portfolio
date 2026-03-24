@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import Draggable from "react-draggable";
+import { MessageCircle } from "lucide-react";
 
 export default function ChatBot() {
   const [messages, setMessages] = useState([]);
@@ -63,9 +64,10 @@ export default function ChatBot() {
   if (!isOpen) {
     return (
       <button
-        className="fixed bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700"
+        className="fixed bottom-8 right-8 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2 transition-all duration-200 hover:scale-105 hover:shadow-xl"
         onClick={() => setIsOpen(true)}
       >
+        <MessageCircle className="size-5" />
         Open Chat
       </button>
     );

@@ -72,7 +72,7 @@ const NavBar = () => {
 
         <nav className="flex flex-col justify-between h-full">
           <div className="space-y-2">
-            <h2 className="text-xl text-[var(--generic-2)] font-bold mb-4">
+            <h2 className="text-xl text-gradient-primary font-bold mb-4">
               My Portfolio
             </h2>
 

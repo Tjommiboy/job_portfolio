@@ -29,7 +29,21 @@
   --natural-9: #725400;
   --transparent-bg: rgba(60, 60, 60, 0.8);
   --color-bg: 6 10 18;
+  --gradient-primary: linear-gradient(to right, #0d9488, #0891b2);
 }
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@layer utilities {
+  .text-gradient-primary {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 @theme {
   --color-darkBg: #111827;
 }

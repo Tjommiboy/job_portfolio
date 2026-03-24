@@ -8,7 +8,7 @@ const NavItem = ({ to, label }) => {
       className={({ isActive }) =>
         `p-2 rounded block ${
           isActive
-            ? "bg-[var(--generic-2)] text-[var(--generic-7)] w-[90%] "
+            ? "bg-[image:var(--gradient-primary)] text-[var(--generic-7)] w-[90%] "
             : "hover:bg-[var(--transparent-bg)] hover:text-[var(--generic-7)] w-[90%] hover:animate-pulse-once text-[var(--generic-2)]"
         }`
       }
