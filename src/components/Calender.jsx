@@ -7,9 +7,9 @@ const Calender = () => {
     const interval = setInterval(() => {
       const now = new Date();
       const dateOptions = {
-        weekday: "long",
+        weekday: "short",
         year: "numeric",
-        month: "long",
+        month: "short",
         day: "numeric",
       };
       const timeOptions = {
@@ -30,12 +30,12 @@ const Calender = () => {
   return (
     <div
       id="calendar"
-      className="bg-sky-400/10 border-gray-800 text-center w-[90%]"
+      className="bg-sky-800/20 border-gray-800 w-[90%] rounded "
     >
-      <p id="date" className="text-amber-50/50 mb-2">
+      <p id="date" className="text-amber-50/50 ">
         {dateTime.date}
       </p>
-      <p id="time" className="text-amber-50/50 font-bold">
+      <p id="time" className="text-amber-50/50 ">
         {dateTime.time}
       </p>
     </div>

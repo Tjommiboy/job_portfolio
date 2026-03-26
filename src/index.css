@@ -98,10 +98,8 @@ body {
 #calendar {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 5px auto;
+  margin-top: 5px;
   padding: 5px;
-  border-radius: 10px;
-  width: 200px;
 }
 
 #date {
@@ -111,4 +109,9 @@ body {
 #time {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.nav-links {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1em;
 }
