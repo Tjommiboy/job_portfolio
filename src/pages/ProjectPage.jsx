@@ -88,7 +88,7 @@ const ProjectPage = () => {
       )}
 
       <h2 className="mt-6 text-xl font-semibold">Built with:</h2>
-      <section className="flex p-4">
+      <section className="flex mt-2">
         <ul className="flex bg-yellow-200/20 p-2 rounded-lg flex-wrap gap-4 p-0 list-none">
           {project.techStack.map((tech) => (
             <li
