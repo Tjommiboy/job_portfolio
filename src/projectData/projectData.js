@@ -1,9 +1,9 @@
 export const projectData = [
   {
     id: "javascript_frameworks",
-    title: "JavaScript Frameworks",
+    title: "React eCommerce Store",
     description:
-      "To apply React knowledge by building a functional, responsive eCommerce store using the Noroff Online Shop API.Lists all products from the API with a live search bar. Clicking a product takes you to its individual page.",
+      "Built a responsive eCommerce web app using React and the Noroff Online Shop API. The application fetches and displays products with a live search feature, allowing users to quickly find items. Each product has a dedicated page with detailed information, demonstrating dynamic routing and component-based architecture.",
     features: [
       "View Listings",
       "Add Item",
