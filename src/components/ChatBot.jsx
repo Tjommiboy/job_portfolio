@@ -22,13 +22,11 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      // ✅ Updated URL logic for 2025 Gen 2 Functions
       const baseUrl =
         window.location.hostname === "localhost"
           ? "http://localhost:5001/my-portfolio-cd16e/us-central1/askAnthropic"
           : "https://askanthropic-hdk7woyz5a-uc.a.run.app";
 
-      // ✅ Fetch the baseUrl directly (no extra /askAnthropic for production)
       const res = await fetch(baseUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
