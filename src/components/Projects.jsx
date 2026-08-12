@@ -9,6 +9,20 @@ const Projects = () => {
       </h2> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <ProjectCard
+          title="Vendor Form"
+          description="This vendor-form is created for company´s to evaluate vendors and their products.This project was built using Claude AI."
+          image="images/vendorform.png"
+          technologies="React, Tailwind, Vite, CSS, GitHub,JSON,Render,Netlify"
+          link="ReactCourse"
+        />
+        <ProjectCard
+          title="Holidaze"
+          description="Holidaze is an accommodation platform."
+          image="images/holidaze11.png"
+          technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
+          link="Exam_Project"
+        />
+        <ProjectCard
           title="Endgame"
           description="Scrimba course where I´ve built the Endgame:Hangman"
           image="images/Endgame 5.png"
@@ -23,13 +37,6 @@ const Projects = () => {
           link="javascript_frameworks"
         />
 
-        <ProjectCard
-          title="Holidaze"
-          description="Holidaze is an accommodation platform."
-          image="images/holidaze11.png"
-          technologies="React, Tailwind, Vite, CSS, GitHub, REST API, JSON,Netlify,Figma"
-          link="Exam_Project"
-        />
         <ProjectCard
           title="Job Finder"
           description="This is a react course I took initially to learn the basics of React."
