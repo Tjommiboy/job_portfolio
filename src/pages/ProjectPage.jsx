@@ -18,13 +18,15 @@ const ProjectPage = () => {
   return (
     <div className="container mx-auto p-4 bg-[rgb(var(--color-bg)/0.6)] rounded text-[var(--generic-2)]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 gap-2 justify-between">
-        <h1 className="text-3xl font-bold">{project.title}</h1>
+        <h1 className="text-3xl font-bold text-gradient-secondary">
+          {project.title}
+        </h1>
         <div className="flex gap-2 mb-2">
           <a
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-lime-500/60 to-lime-600/60 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-lime-500/90 hover:to-lime-600/90"
+            className="bg-gradient-to-r from-orange-500/90 to-yellow-600/60 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-orange-500/90 hover:to-yellow-600/90"
           >
             View Website
           </a>
@@ -34,7 +36,7 @@ const ProjectPage = () => {
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-lime-500/60 to-lime-600/60 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-lime-500/90 hover:to-lime-600/90"
+            className="bg-gradient-to-r from-orange-500/90 to-yellow-600/60 text-white font-semibold rounded-lg px-4 py-2 shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-r hover:from-orange-500/90 hover:to-orange-600/90"
           >
             View Repo
           </a>

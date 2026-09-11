@@ -35,7 +35,7 @@ const NavBar = () => {
         <div className="md:hidden p-1 z-50 sticky top-0">
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className="bg-gray-700 text-[var(--natural-4)] px-3 py-1 rounded"
+            className="bg-orange-700     text-orange-300 px-3 py-1 rounded"
           >
             ☰
           </button>
@@ -64,7 +64,7 @@ const NavBar = () => {
           <div className="md:hidden flex">
             <button
               onClick={closeSidebar}
-              className="bg-gray-700 text-[var(--natural-4)] px-3 py-1 rounded"
+              className="bg-orange-700     text-orange-300 px-3 py-1 rounded"
             >
               ✕
             </button>
@@ -73,7 +73,7 @@ const NavBar = () => {
 
         <nav className="flex flex-col justify-between h-full">
           <div className="space-y-2">
-            <h2 className="text-xl text-gradient-primary font-bold mb-4">
+            <h2 className="text-xl text-gradient-secondary font-bold mb-4">
               My Portfolio
             </h2>
 
