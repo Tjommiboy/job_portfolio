@@ -8,7 +8,7 @@ const Hero = () => {
         {/* H1 */}
         <h1 className="mb-2 text-5xl md:text-6xl lg:text-7xl text-white [text-shadow:0px_3px_8px_rgba(255,255,255,0.2)]">
           Hi, I'm{" "}
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-400/80 to-cyan-400/70">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500/90 to-amber-500/80">
             Anand Chetty,
           </span>
           Frontend Developer
