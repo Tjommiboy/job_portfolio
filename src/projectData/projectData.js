@@ -331,4 +331,71 @@ export const projectData = [
     repo: "https://github.com/Tjommiboy/hangman",
     demo: "https://mellow-heliotrope-bbbc60.netlify.app/",
   },
+  {
+    id: "Vendorform",
+    title: "Vendorform",
+    description:
+      "This vendor-form is created for company´s to evaluate vendors and their products.This project was built using Claude AI.",
+    technologies: ["React", "Vite", "Figma", "Git", "Netlify"],
+    features: [
+      "Components",
+      "Props",
+      "UseState",
+      "side effects",
+      "conditional rendering",
+      "event handling",
+      "interactive UI elements",
+    ],
+    reflections: `A key feature is the automatic weighted score calculation, which calculates the vendor’s overall score out of 100 and assigns a performance level from A (Partner) to D (At Risk) based on the result.`,
+    techStack: [
+      {
+        name: "HTML",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "React",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "React Router",
+        logo: "https://cdn.simpleicons.org/reactrouter/CA4245",
+      },
+      {
+        name: "CSS Modules",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", // reuse CSS icon
+      },
+      {
+        name: "Figma",
+        logo: "https://cdn.simpleicons.org/figma/F24E1E",
+      },
+
+      {
+        name: "Deployment with Netlify",
+        logo: "https://cdn.simpleicons.org/netlify/00C7B7",
+      },
+      {
+        name: "Form Validation",
+        logo: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/svgs/solid/check.svg",
+      },
+      {
+        name: "API Integration",
+      },
+    ],
+    images: [
+      "/images/vendorform.png",
+      "/images/vendor2.png",
+      "/images/vendor4.png",
+      "/images/vendor6.png",
+    ],
+    repo: "https://github.com/Tjommiboy/vendorform_evaluation",
+    demo: "https://incomparable-cascaron-bd8f01.netlify.app/",
+  },
 ];

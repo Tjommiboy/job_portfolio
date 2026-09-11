@@ -13,7 +13,7 @@ const Projects = () => {
           description="This vendor-form is created for company´s to evaluate vendors and their products.This project was built using Claude AI."
           image="images/vendorform.png"
           technologies="React, Tailwind, Vite, CSS, GitHub,JSON,Render,Netlify"
-          link="ReactCourse"
+          link="Vendorform"
         />
         <ProjectCard
           title="Holidaze"
